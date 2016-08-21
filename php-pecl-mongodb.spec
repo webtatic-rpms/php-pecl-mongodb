@@ -7,7 +7,7 @@
 
 Name:           %{basepkg}-pecl-mongodb
 Version:        1.1.8
-Release:        1%{?rcver:.%{rcver}}%{?dist}
+Release:        2%{?rcver:.%{rcver}}%{?dist}
 Summary:        PECL package MongoDB driver
 
 License:        BSD
@@ -87,7 +87,7 @@ make install INSTALL_ROOT=$RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_inidir}
 cat > $RPM_BUILD_ROOT%{php_inidir}/%{pecl_name}.ini << 'EOF'
 ; Enable mongodb extension module
-zend_extension=%{php_extdir}/%{pecl_name}.so
+extension=%{pecl_name}.so
 EOF
 
 popd
@@ -145,5 +145,8 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Sun Aug 21 2016 Andy Thompson <andy@webtatic.com> 1.1.8-1
+- Change config to PHP extension
+
 * Sun Aug 21 2016 Andy Thompson <andy@webtatic.com> 1.1.8-1
 - Initial spec
