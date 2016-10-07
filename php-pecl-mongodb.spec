@@ -7,7 +7,7 @@
 
 Name:           %{basepkg}-pecl-mongodb
 Version:        1.1.8
-Release:        2%{?rcver:.%{rcver}}%{?dist}
+Release:        3%{?rcver:.%{rcver}}%{?dist}
 Summary:        PECL package MongoDB driver
 
 License:        BSD
@@ -145,6 +145,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Fri Oct 07 2016 Andy Thompson <andy@webtatic.com> 1.1.8-3
+- Rebuild for php(API) update
+
 * Sun Aug 21 2016 Andy Thompson <andy@webtatic.com> 1.1.8-1
 - Change config to PHP extension
 
