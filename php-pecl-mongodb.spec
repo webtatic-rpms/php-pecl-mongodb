@@ -7,7 +7,7 @@
 
 Name:           %{basepkg}-pecl-mongodb
 Version:        1.2.8
-Release:        1%{?rcver:.%{rcver}}%{?dist}
+Release:        1.1%{?rcver:.%{rcver}}%{?dist}
 Summary:        PECL package MongoDB driver
 
 License:        BSD
@@ -145,6 +145,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Sat Jun 24 2017 Andy Thompson <andy@webtatic.com> 1.2.8-1.1
+- Rebuild for php-7.2.0alpha2 Zend ABI version change
+
 * Sun Apr 23 2017 Andy Thompson <andy@webtatic.com> 1.2.8-1
 - update to 1.2.8
 
