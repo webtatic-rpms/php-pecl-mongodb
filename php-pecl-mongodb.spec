@@ -6,8 +6,8 @@
 %global with_zts  0%{?__ztsphp:1}
 
 Name:           %{basepkg}-pecl-mongodb
-Version:        1.2.10
-Release:        1.1%{?rcver:.%{rcver}}%{?dist}
+Version:        1.3.1
+Release:        1%{?rcver:.%{rcver}}%{?dist}
 Summary:        PECL package MongoDB driver
 
 License:        BSD
@@ -145,6 +145,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Thu Oct 19 2017 Andy Thompson <andy@webtatic.com> 1.3.1
+- update to 1.3.1
+
 * Sat Sep 16 2017 Andy Thompson <andy@webtatic.com> 1.2.10-1
 - update to 1.2.10
 
