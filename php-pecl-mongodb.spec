@@ -6,7 +6,7 @@
 %global with_zts  0%{?__ztsphp:1}
 
 Name:           %{basepkg}-pecl-mongodb
-Version:        1.4.1
+Version:        1.5.3
 Release:        1%{?rcver:.%{rcver}}%{?dist}
 Summary:        PECL package MongoDB driver
 
@@ -145,6 +145,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Sat Dec 15 2018 Andy Thompson <andy@webtatic.com> 1.5.3
+- update to 1.5.3
+
 * Thu Feb 22 2018 Andy Thompson <andy@webtatic.com> 1.4.1
 - update to 1.4.1
 
